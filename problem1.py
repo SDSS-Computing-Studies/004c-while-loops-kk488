@@ -17,3 +17,18 @@ outputs:
 Access granted
 Access denied
 """
+print("enter correct username and password")
+inputName=""
+inputPW=""
+count=0
+while inputName!="admin" and inputPW!="12345" and count<4:
+    inputName=input("enter username:")
+    inputPW=input("enter password:")
+    if inputName=="admin" and inputPW=="12345":
+        print("Access granted.")
+        break
+    else:
+        print("Access denied.")
+        inputName=input("enter username:")
+        inputPW=input("enter password:")
+        count+=1
