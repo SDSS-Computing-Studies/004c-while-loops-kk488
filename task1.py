@@ -16,3 +16,9 @@ Example:
 10
 ...
 """
+i=1
+j=0
+while j<20:
+    j=i*2
+    i+=1
+    print(j)
